@@ -3,16 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cruz Control Digital | Premium Real Estate Marketing</title>
-  
+  <title>Cruz Control Digital | Real Estate Digital Marketing Agency</title>
+
+  <meta name="description" content="Cruz Control Digital is a boutique digital marketing agency for real estate professionals. We handle your website, SEO, social media, and content so you can focus on closing deals.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cruzcontroldigital.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cruzcontroldigital.com/">
+  <meta property="og:title" content="Cruz Control Digital | Real Estate Digital Marketing Agency">
+  <meta property="og:description" content="Boutique digital marketing for real estate professionals. Websites, SEO, social media, and video content — managed for you.">
+  <meta property="og:image" content="https://cruzcontroldigital.com/images/social_media.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cruz Control Digital | Real Estate Digital Marketing Agency">
+  <meta name="twitter:description" content="Boutique digital marketing for real estate professionals. Websites, SEO, social media, and video content — managed for you.">
+  <meta name="twitter:image" content="https://cruzcontroldigital.com/images/social_media.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo_transparent.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-  
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://cruzcontroldigital.com/#business",
+        "name": "Cruz Control Digital, LLC",
+        "url": "https://cruzcontroldigital.com",
+        "description": "Boutique digital marketing agency specializing in websites, SEO, social media, and content creation for real estate professionals.",
+        "telephone": "+1-979-484-7122",
+        "email": "devin@cruzcontroldigital.com",
+        "priceRange": "$$",
+        "areaServed": "United States",
+        "knowsAbout": ["Real Estate Marketing", "Digital Marketing", "SEO", "Social Media Management", "Video Production", "Website Design"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://cruzcontroldigital.com/#website",
+        "url": "https://cruzcontroldigital.com",
+        "name": "Cruz Control Digital",
+        "publisher": { "@id": "https://cruzcontroldigital.com/#business" }
+      }
+    ]
+  }
+  </script>
 
 </head>
 <body>
@@ -21,7 +68,7 @@
   <nav class="navbar glass">
     <div class="nav-container">
       <a href="#" class="logo">
-        <img src="images/logo_transparent.png" alt="Cruz Control Digital Logo" class="nav-logo-img">
+        <img src="images/logo_transparent.png" alt="Cruz Control Digital Logo" class="nav-logo-img" width="160" height="160">
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
@@ -67,7 +114,7 @@
 
       <div class="bento-grid">
         <!-- Card 1 -->
-        <div class="bento-card fade-up">
+        <div class="bento-card">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="icon-wrap">🌐</div>
@@ -82,7 +129,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="bento-card fade-up">
+        <div class="bento-card">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="icon-wrap">🔍</div>
@@ -92,7 +139,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="bento-card fade-up col-span-2">
+        <div class="bento-card col-span-2">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="icon-wrap">🎬</div>
@@ -102,7 +149,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="bento-card fade-up">
+        <div class="bento-card">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="icon-wrap">📝</div>
@@ -112,7 +159,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="bento-card fade-up">
+        <div class="bento-card">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="icon-wrap">🌍</div>
@@ -232,11 +279,11 @@
           <div class="contact-methods">
             <div class="method">
               <span class="method-icon">✉</span>
-              <a href="mailto:devin@cruzcontroldigital.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#00f0ff'" onmouseout="this.style.color='inherit'">devin@cruzcontroldigital.com</a>
+              <a href="mailto:devin@cruzcontroldigital.com" class="contact-link">devin@cruzcontroldigital.com</a>
             </div>
             <div class="method">
               <span class="method-icon">☎</span>
-              <a href="tel:9794847122" style="color: inherit; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#00f0ff'" onmouseout="this.style.color='inherit'">979-484-7122</a>
+              <a href="tel:9794847122" class="contact-link">979-484-7122</a>
             </div>
           </div>
         </div>
@@ -244,29 +291,29 @@
         <form class="contact-form glass" id="leadForm">
           <div class="form-row">
             <div class="input-group">
-              <input type="text" id="fname" required placeholder="First Name">
+              <input type="text" id="fname" name="fname" required placeholder="First Name" aria-label="First Name" autocomplete="given-name">
             </div>
             <div class="input-group">
-              <input type="text" id="lname" required placeholder="Last Name">
+              <input type="text" id="lname" name="lname" required placeholder="Last Name" aria-label="Last Name" autocomplete="family-name">
             </div>
           </div>
-          
+
           <div class="input-group">
-            <input type="email" id="email" required placeholder="Email Address">
+            <input type="email" id="email" name="email" required placeholder="Email Address" aria-label="Email Address" autocomplete="email">
           </div>
-          
+
           <div class="input-group">
-            <select id="role" required>
+            <select id="role" name="role" required aria-label="I am a...">
               <option value="" disabled selected>I am a...</option>
-              <option>Solo Agent</option>
-              <option>New Agent (< 2 years)</option>
-              <option>Small Team (2–5 agents)</option>
-              <option>Broker / Office</option>
+              <option value="solo-agent">Solo Agent</option>
+              <option value="new-agent">New Agent (&lt; 2 years)</option>
+              <option value="small-team">Small Team (2–5 agents)</option>
+              <option value="broker">Broker / Office</option>
             </select>
           </div>
-          
+
           <div class="input-group">
-            <textarea id="message" placeholder="Tell us about your goals..." rows="4" required></textarea>
+            <textarea id="message" name="message" placeholder="Tell us about your goals..." rows="4" required aria-label="Tell us about your goals"></textarea>
           </div>
           
           <button type="submit" class="btn-primary btn-submit">Send Request</button>
